@@ -9,41 +9,56 @@
   <link href="http://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
   <link href="http://cdn.bootcss.com/materialize/0.98.2/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!--<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-  <style>nav .brand-logo,nav ul a{color:#444}p{line-height:2rem}.button-collapse{color:#26a69a}.parallax-container{min-height:380px;line-height:0;height:auto;color:rgba(255,255,255,.9)}.parallax-container .section{width:100%}@media only screen and (max-width :992px){.parallax-container .section{position:absolute;top:40%}#index-banner .section{top:10%}}@media only screen and (max-width :600px){#index-banner .section{top:0}}.icon-block{padding:0 15px}.icon-block .material-icons{font-size:inherit}footer.page-footer{margin:0}</style>
-  <base href="http://hxmc.iblueg.cn/" />
+  <style>nav .brand-logo,nav ul a{color:#ddd}p{line-height:2rem}.button-collapse{color:#ddd}.parallax-container{min-height:380px;line-height:0;height:auto;color:rgba(255,255,255,.9)}.parallax-container .section{width:100%}@media only screen and (max-width :992px){.parallax-container .section{position:absolute;top:40%}#index-banner .section{top:10%}}@media only screen and (max-width :600px){#index-banner .section{top:0}}.icon-block{padding:0 15px}.icon-block .material-icons{font-size:inherit}footer.page-footer{margin:0}</style>
   <base target="_blank" />
 </head>
 <body>
   <nav class="indigo hoverable z-depth-3" role="navigation">
     <div class="nav-wrapper container"> 
-      <a id="logo-container" href="#" class="brand-logo"><img style="margin:10px;" src="images/logo.png" /></a>
+      <a id="logo-container" href="#" class="brand-logo"><img style="margin:10px;" src="http://hxmc.iblueg.cn/images/logo.png" /></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li class="active white-text"><a href="#">首页</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li class="active white-text"><a href="#">首页</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
+
+  <!-- Modal Trigger 
+  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>-->
+
+  <!-- Modal Structure -->
+  <div id="download" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-green btn-flat ">关闭</a>
+    </div>
+  </div>
+          
+
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">幻雪服务器</h1>
+        <br><br><br><br>
+        <h1 class="header center blue-text text-darken-2" style="margin-top:50px;">幻雪服务器</h1>
         <div class="row center">
           <h5 class="header col s12 light"></h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="#download" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1 modal-trigger">点我开启新旅程！</a>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="images/img-header/slider-img-1.jpg" alt="Background"></div>
+    <div class="parallax"><img src="http://hxmc.iblueg.cn/images/img-header/slider-img-1.jpg" alt="Background"></div>
   </div>
 
 
@@ -66,7 +81,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">图片简介</h5>
         </div>
       </div>
     </div>
@@ -80,10 +95,10 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h2 class="center brown-text"><i class="material-icons">language</i></h2>
+            <h5 class="center">BGP 多线网络</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">接入国内所有主流运营商 BGP 骨干网，覆盖全国的极速公网体验。</p>
           </div>
         </div>
 
@@ -133,7 +148,7 @@
           
   <div class="card hoverable small">
     <div class="card-image waves-effect waves-block waves-light">
-      <img style="padding:50px;" class="activator" src="images/img-head/NEW66.png">
+      <img style="padding:50px;" class="activator" src="http://hxmc.iblueg.cn/images/img-head/NEW66.png">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">NEW66 (组长)<i class="material-icons right">more_vert</i></span>
@@ -149,7 +164,7 @@
         <div class="col s12 m6 l4">
             <div class="card hoverable">
     <div class="card-image waves-effect waves-block waves-light">
-      <img style="padding:50px;" class="activator" src="images/img-head/Clive_Caster.png">
+      <img style="padding:50px;" class="activator" src="http://hxmc.iblueg.cn/images/img-head/Clive_Caster.png">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">Clive_Caster<br>(技术)<i class="material-icons right">more_vert</i></span>
@@ -164,7 +179,7 @@
         <div class="col s12 m6 l4">
             <div class="card hoverable">
     <div class="card-image waves-effect waves-block waves-light">
-      <img style="padding:50px;" class="activator" src="images/img-head/ABRAHAMside.png">
+      <img style="padding:50px;" class="activator" src="http://hxmc.iblueg.cn/images/img-head/ABRAHAMside.png">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">ABRAHAMside (组长)<i class="material-icons right">more_vert</i></span>
@@ -179,7 +194,7 @@
         <div class="col s12 m6 l4">
             <div class="card hoverable">
     <div class="card-image waves-effect waves-block waves-light">
-      <img style="padding:50px;" class="activator" src="images/img-head/PASS_233.png">
+      <img style="padding:50px;" class="activator" src="http://hxmc.iblueg.cn/images/img-head/PASS_233.png">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">NEW66 (组长)<i class="material-icons right">more_vert</i></span>
@@ -251,7 +266,7 @@
   <!--  Scripts-->
   <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="http://cdn.bootcss.com/materialize/0.98.2/js/materialize.min.js"></script>
-  <script>(function($){$(function(){$('.button-collapse').sideNav();$('.parallax').parallax()})})(jQuery);</script>
+  <script>(function($){$(function(){$('.button-collapse').sideNav();$('.parallax').parallax()})})(jQuery); $(document).ready(function(){$('#download').modal()});</script>
 
   </body>
 </html>
