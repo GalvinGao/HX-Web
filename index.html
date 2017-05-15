@@ -9,10 +9,14 @@
   <link href="http://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
   <link href="http://cdn.bootcss.com/materialize/0.98.2/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!--<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-  <style>nav .brand-logo,nav ul a{color:#ddd}p{line-height:2rem}.button-collapse{color:#ddd}.parallax-container{min-height:380px;line-height:0;height:auto;color:rgba(255,255,255,.9)}.parallax-container .section{width:100%}@media only screen and (max-width :992px){.parallax-container .section{position:absolute;top:40%}#index-banner .section{top:10%}}@media only screen and (max-width :600px){#index-banner .section{top:0}}.icon-block{padding:0 15px}.icon-block .material-icons{font-size:inherit}footer.page-footer{margin:0}</style>
+  <script src="http://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <style>nav .brand-logo,nav ul a{color:#ddd}p{line-height:2rem}.button-collapse{color:#ddd}.parallax-container{min-height:380px;line-height:0;height:auto;color:rgba(255,255,255,.9)}.parallax-container .section{width:100%}@media only screen and (max-width :992px){.parallax-container .section{position:absolute;top:40%}#index-banner .section{top:10%}}@media only screen and (max-width :600px){#index-banner .section{top:0}}.icon-block{padding:0 15px}.icon-block .material-icons{font-size:inherit}footer.page-footer{margin:0}
+.preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#000;z-index:999999;height:100%;width:100%;overflow:hidden!important}#loading{width:128px;height:128px;position:absolute;left:50%;top:50%;background-image:url(http://hxmc.iblueg.cn/images/preloader.gif);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;background-size:cover;margin:-70px 0 0 -70px}
+</style>
   <base target="_blank" />
 </head>
 <body>
+<div class="preloader" id="preloaderhide"><div id="loading"></div></div>
   <nav class="indigo hoverable z-depth-3" role="navigation">
     <div class="nav-wrapper container"> 
       <a id="logo-container" href="#" class="brand-logo"><img style="margin:10px;" src="http://hxmc.iblueg.cn/images/logo.png" /></a>
@@ -34,11 +38,11 @@
   <!-- Modal Structure -->
   <div id="download" class="modal modal-fixed-footer">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>下载客户端</h4>
+      <p>下载客户端，即默认同意《幻雪服务器 EULA》。为了服务器的稳定性考量，<span class="yellow lighten-2 red-text text-darken-2">请不要使用迅雷等多线程下载工具</span>。谢谢配合！</p>
     </div>
     <div class="modal-footer">
-      <a class="modal-action modal-close waves-effect waves-green btn-flat ">关闭</a>
+      <a class="modal-action modal-close waves-effect waves-grey btn-flat">关闭</a>
     </div>
   </div>
           
@@ -266,7 +270,12 @@
   <!--  Scripts-->
   <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="http://cdn.bootcss.com/materialize/0.98.2/js/materialize.min.js"></script>
-  <script>(function($){$(function(){$('.button-collapse').sideNav();$('.parallax').parallax()})})(jQuery); $(document).ready(function(){$('#download').modal()});</script>
+  <script>(function($){$(function(){$('.button-collapse').sideNav();$('.parallax').parallax()})})(jQuery); $(document).ready(function(){$('#download').modal()});
+
+$(document).ready(function(){
+  document.getElementById("preloaderhide").style.cssText="display:none;";
+});
+</script>
 
   </body>
 </html>
