@@ -6,9 +6,9 @@
   <title>Minecraft-建筑交流服务器 | 幻雪</title>
 
     <meta charset="UTF-8" />
-    <meta name="title" content="幻雪服务器官网-幻雪，Minecraft建筑交流服务器" />
+    <meta name="title" content="幻雪服务器官网：幻雪，Minecraft建筑交流服务器" />
     <meta name="description" content="描述" />
-    <meta name="keywords" content="Minecraft,minecraft,Mc,mc,Minecraft建筑,Minecraft建筑交流,建筑交流,Minecraft服务器,Mc服务器,McServer" />
+    <meta name="keywords" content="Minecraft,minecraft,Mc,mc,Minecraft建筑,Minecraft建筑交流,建筑交流,Minecraft服务器,Mc服务器,McServer,MagicSnowCraft,MSC,SnowCraft,MinecraftSnow,Minecraft Snow" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Cache-Control" content="public" />
@@ -17,11 +17,13 @@
   <!-- CSS  -->
   <link href="http://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
   <link href="http://cdn.bootcss.com/materialize/0.98.2/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="http://static.qn.iblueg.cn/sf2017/fonts/FZQingKeBenYueSongS-R-GB.css" type="text/css" rel="stylesheet">
   <!--<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
   <!--<script src="http://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>-->
   <style>nav .brand-logo,nav ul a{color:#ddd}p{line-height:2rem}.button-collapse{color:#ddd}.parallax-container{min-height:380px;line-height:0;height:auto;color:rgba(255,255,255,.9)}.parallax-container .section{width:100%}@media only screen and (max-width :992px){.parallax-container .section{position:absolute;top:40%}#index-banner .section{top:10%}}@media only screen and (max-width :600px){#index-banner .section{top:0}}.icon-block{padding:0 15px}.icon-block .material-icons{font-size:inherit}footer.page-footer{margin:0}
-.preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#000;z-index:999999;height:100%;width:100%;overflow:hidden!important}#loading{width:128px;height:128px;position:absolute;left:50%;top:50%;background-image:url(http://hxmc.iblueg.cn/images/preloader.gif);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;background-size:cover;margin:-70px 0 0 -70px}
-.stitle{color:#f35626;background-image:-webkit-linear-gradient(92deg,#f35626,#feab3a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:hue 15s infinite linear}@-webkit-keyframes hue{from{-webkit-filter:hue-rotate(0)}to{-webkit-filter:hue-rotate(-360deg)}}
+.preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#000;z-index:999999;height:100%;width:100%;overflow:hidden!important;transition: width 2s;}#loading{width:128px;height:128px;position:absolute;left:50%;top:50%;background-image:url(http://hxmc.iblueg.cn/images/preloader.gif);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;background-size:cover;margin:-70px 0 0 -70px}
+.stitle{color:#f35626;background-image:-webkit-linear-gradient(92deg,#f35626,#feab3a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:hue 30s infinite linear}@-webkit-keyframes hue{from{-webkit-filter:hue-rotate(0)}to{-webkit-filter:hue-rotate(-360deg)}}
+.container{font-family:"FZQingKeBenYueSongS-R-GB",sans-serif} #preloaderhide:after{opacity:0%;}
 </style>
   <base target="_blank" />
 </head>
@@ -42,14 +44,32 @@
   </nav>
 
 
-  <!-- Modal Trigger 
-  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>-->
-
   <!-- Modal Structure -->
-  <div id="download" class="modal modal-fixed-footer">
+  <div id="download" class="container modal modal-fixed-footer">
     <div class="modal-content">
-      <h4>下载客户端</h4>
-      <p>下载客户端，即默认同意《幻雪服务器 EULA》。为了服务器的稳定性考量，<span class="yellow lighten-2 red-text text-darken-2">请不要使用迅雷等多线程下载工具</span>。谢谢配合！</p>
+      <h4 style="margin-top:30px;">下载客户端</h4>
+      <p style="margin-top:10px;">下载客户端，即默认同意《幻雪服务器 EULA》。为保证服务稳定性，<span class="yellow lighten-3 red-text text-darken-2">请不要使用迅雷、EDM 等多线程下载工具</span>。谢谢配合！</p>
+      
+      <div class="collection">
+        <a href="http://hxmc.iblueg.cn/construction" class="collection-item active valign-wrapper"><i class="material-icons secondary-content">file_download</i>&nbsp;&nbsp;&nbsp;&nbsp;最新版 v1.0</a>
+      </div>
+            
+    </div>
+    <div class="modal-footer">
+      <a class="modal-action modal-close waves-effect waves-grey btn-flat">关闭</a>
+    </div>
+  </div>
+
+  <div id="mdownload" class="container modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4 style="margin-top:30px;">下载客户端</h4>
+      <p style="margin-top:10px;"><span class="yellow lighten-3 red-text text-darken-2">请注意：您现在正在试图使用移动设备下载客户端。幻雪服务器客户端只适用于装有 Windows，Mac OS X 或 Unix-like 的电脑。若执意使用移动设备下载电脑客户端，请在下载前检查是否使用 4G 等蜂窝移动数据下载。不当的使用方法可能会消耗大量流量并产生高额费用，请小心使用。</span></p>
+      <p style="margin-top:10px;">下载客户端，即默认同意《幻雪服务器 EULA》。为保证服务稳定性，<span class="yellow lighten-3 red-text text-darken-2">请不要使用迅雷、EDM 等多线程下载工具</span>。谢谢配合！</p>
+      
+      <div class="collection">
+        <a href="http://hxmc.iblueg.cn/construction" class="collection-item active valign-wrapper"><i class="material-icons secondary-content">file_download</i>&nbsp;&nbsp;&nbsp;&nbsp;最新版 v1.0</a>
+      </div>
+            
     </div>
     <div class="modal-footer">
       <a class="modal-action modal-close waves-effect waves-grey btn-flat">关闭</a>
@@ -66,7 +86,8 @@
           <h5 class="header col s12 light"></h5>
         </div>
         <div class="row center">
-          <a href="#download" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1 modal-trigger">点我开启新旅程！</a>
+          <a href="#download" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1 modal-trigger hide-on-small-only">点我开启新旅程！</a>
+          <a href="#mdownload" id="download-button" class="btn-large waves-effect waves-light indigo lighten-1 modal-trigger hide-on-med-and-up">下载客户端</a>
         </div>
         <br><br>
 
@@ -83,7 +104,7 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>简介</h4>
-          <p class="left-align light">我们一直没有期望创建一个闻名世界的服务器，但是我们所追求的只是一个大家进行交流与创作的平台，其中包括建筑、生存和设计等等。我们不希望中国的 Minecraft 服务器只是一些 “素质低下” “收费超贵” “人民币玩家泛滥”，而是 “团队合作” “建筑精细” “技术优良” 的形象。我们团队的精神，只是想纯粹做出一个，让每个人都可以享受的，充满 Minecraft 乐趣的世界。同时，我们也欢迎来自全球各地的有识之士加入我们！</p>
+          <p class="left-align light">我们一直没有期望创建一个闻名世界的服务器，但是我们所追求的只是一个大家进行交流与创作的平台，其中包括建筑、生存和设计等等。我们不希望中国的 Minecraft 服务器只是一些 “素质低下” “收费超贵” “人民币玩家泛滥”，而是 “团队合作” “建筑精细” “技术优良” 的形象。我们团队的精神，只是想纯粹做出一个，让每个人都可享受的，充满 Minecraft 乐趣的，人人平等且公正的世界。从这里开始，幻雪带着我们的期望，在 2017 年 2 月 11 日诞生了。</p>
         </div>
       </div>
 
@@ -95,7 +116,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">图片简介</h5>
+          <h5 class="header col s12 light">建筑图片</h5>
         </div>
       </div>
     </div>
@@ -118,7 +139,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center black-text text-lighten-1"><i class="material-icons">group</i></h2>
+            <h2 class="center black-text text-lighten-1"><i class="material-icons">loyalty</i></h2>
             <h5 class="center">User Experience Focused</h5>
 
             <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
@@ -127,7 +148,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center black-text text-lighten-1"><i class="material-icons">settings</i></h2>
+            <h2 class="center black-text text-lighten-1"><i class="material-icons">lock_outine</i></h2>
             <h5 class="center">Easy to work with</h5>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
@@ -143,12 +164,87 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">图片简介</h5>
+          <h5 class="header col s12 light">团队Minecraft合影1</h5>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=Coming+soon!" alt="Unsplashed background img 2"></div>
   </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="center">团队成员</h4>
+                <div class="row">
+        <div class="col s6 m4 center">
+          
+  <div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img style="padding:50px;" class="activator img-head circle" src="http://hxmc.iblueg.cn/images/img-head/NEW66.png">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">NEW66 (组长)<i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">简介<i class="material-icons right">close</i></span>
+      <p>一个爱穿红衣服的彩色小人，特别爱发滑稽QAQ。</p>
+    </div>
+  </div>
+            
+        </div>
+
+        <div class="col s6 m4 center">
+            <div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img style="padding:50px;" class="activator img-head circle" src="http://hxmc.iblueg.cn/images/img-head/Clive_Caster.png">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Clive_Caster (技术)<i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">简介<i class="material-icons right">close</i></span>
+      <p>为服务器提供技术支持，默默奉献～</p>
+    </div>
+  </div>
+        </div>
+
+        <div class="col s6 m4 center">
+            <div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img style="padding:50px;" class="activator img-head circle" src="http://hxmc.iblueg.cn/images/img-head/ABRAHAMside.png">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">ABRAHAMside (组长)<i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">简介<i class="material-icons right">close</i></span>
+      <p>什么都会做，却都做不好的红色面具变态。</p>
+    </div>
+  </div>
+        </div>
+
+      </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">团队Minecraft合影2</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=Coming+soon!" alt="Unsplashed background img 3"></div>
+  </div>
+
 
   <div class="container">
     <div class="section">
@@ -226,16 +322,15 @@
     </div>
   </div>
 
-
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">图片简介</h5>
+          <h5 class="header col s12 light">幻雪，帮你实现你的梦想世界！</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=Coming+soon!" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=Coming+soon!" alt="Unsplashed background img 2"></div>
   </div>
 
 
@@ -271,7 +366,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      &copy; 版权所有 幻雪 & Galvin.G 2017. 使用 <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a> 前端框架制作。
       </div>
     </div>
   </footer>
@@ -281,7 +376,7 @@
   <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="http://cdn.bootcss.com/materialize/0.98.2/js/materialize.min.js"></script>
   <script>(function($){$(function(){$('.button-collapse').sideNav();$('.parallax').parallax()})})(jQuery); //手机版menu与parallex的初始化
- $(document).ready(function(){$('#download').modal()}); //modal模态框初始化
+ $(document).ready(function(){$('#download').modal();$('#mdownload').modal()}); //modal模态框初始化
 
 $(document).ready(function(){
   document.getElementById("preloaderhide").style.cssText="display:none;"; //页面加载完后移除loading
