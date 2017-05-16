@@ -21,6 +21,7 @@
   <!--<script src="http://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>-->
   <style>nav .brand-logo,nav ul a{color:#ddd}p{line-height:2rem}.button-collapse{color:#ddd}.parallax-container{min-height:380px;line-height:0;height:auto;color:rgba(255,255,255,.9)}.parallax-container .section{width:100%}@media only screen and (max-width :992px){.parallax-container .section{position:absolute;top:40%}#index-banner .section{top:10%}}@media only screen and (max-width :600px){#index-banner .section{top:0}}.icon-block{padding:0 15px}.icon-block .material-icons{font-size:inherit}footer.page-footer{margin:0}
 .preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#000;z-index:999999;height:100%;width:100%;overflow:hidden!important}#loading{width:128px;height:128px;position:absolute;left:50%;top:50%;background-image:url(http://hxmc.iblueg.cn/images/preloader.gif);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;background-size:cover;margin:-70px 0 0 -70px}
+.stitle {color: #f35626;background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);-webkit-background-clip: text;-webkit-text-fill-color: transparent;-webkit-animation: hue 60s infinite linear;}
 </style>
   <base target="_blank" />
 </head>
@@ -60,7 +61,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br><br><br>
-        <h1 class="header center blue-text text-darken-2" style="margin-top:50px;">幻雪服务器</h1>
+        <h1 class="header center stitle" style="margin-top:50px;">幻雪服务器</h1>
         <div class="row center">
           <h5 class="header col s12 light"></h5>
         </div>
@@ -286,7 +287,7 @@ $(document).ready(function(){
   document.getElementById("preloaderhide").style.cssText="display:none;"; //页面加载完后移除loading
 });
 
-var randomTitlePrefixPayload = ["箫声咽，秦娥梦断秦楼月","庭院深深深几许？杨柳堆烟，帘幕无重数","蜂蝶纷纷过墙去，却疑春色在邻家","密锁重关掩录苔，廊深阁回此徘徊","明月自来还自去，更无人倚玉栏杆","西园何限相思树，辛苦梅花候海棠"]; //TODO-------------
+var randomTitlePrefixPayload = ["箫声咽，秦娥梦断秦楼月","庭院深深深几许？杨柳堆烟，帘幕无重数","蜂蝶纷纷过墙去，却疑春色在邻家","密锁重关掩录苔，廊深阁回此徘徊","明月自来还自去，更无人倚玉栏杆","西园何限相思树，辛苦梅花候海棠"]; //随机页面标题前缀
 var randomTitleIndex = Math.round(Math.random() * 5); //生成随机数
 var randomTitlePrefix = randomTitlePrefixPayload[randomTitleIndex] //用随机数取用Payload里的数据
 var titleAdded = randomTitlePrefix + " | 幻雪"; //合并字符串
