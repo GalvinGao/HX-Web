@@ -116,11 +116,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">建筑图片</h5>
+          <h5 class="header col s12 light">图片描述</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=Coming+soon!" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=建筑图片" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -165,11 +165,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">团队Minecraft合影1</h5>
+          <h5 class="header col s12 light">图片描述</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=Coming+soon!" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=团队Minecraft内合影1" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -239,11 +239,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">团队Minecraft合影2</h5>
+          <h5 class="header col s12 light">图片描述</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=Coming+soon!" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=团队Minecraft内合影2" alt="Unsplashed background img 3"></div>
   </div>
 
 
@@ -317,7 +317,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=Coming+soon!" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="http://placehold.it/1440x743/3949ab/e8eaf6/?text=%20" alt="Unsplashed background img 2"></div>
   </div>
 
 
@@ -390,14 +390,27 @@ function getSTime() {
     var StartTime = new Date('2017/2/11 00:00:00'); 
     var NowTime = new Date();
     var STime_t = NowTime.getTime() - StartTime.getTime();
-    var STime_d = Math.floor(STime_t / 1000 / 60 / 60 / 24);
-    var STime_h = Math.floor(STime_t / 1000 / 60 / 60 % 24);
-    var STime_m = Math.floor(STime_t / 1000 / 60 % 60);
-    var STime_s = Math.floor(STime_t / 1000 % 60);
+    var tSTime_d = Math.floor(STime_t / 1000 / 60 / 60 / 24);
+    var tSTime_h = Math.floor(STime_t / 1000 / 60 / 60 % 24);
+    var tSTime_m = Math.floor(STime_t / 1000 / 60 % 60);
+    var tSTime_s = Math.floor(STime_t / 1000 % 60);
+    var STime_d = pad(tSTime_d, 3);
+    var STime_h = pad(tSTime_h, 2);
+    var STime_m = pad(tSTime_m, 2);
+    var STime_s = pad(tSTime_s, 2);
     var t_all = STime_d + "天 " + STime_h + "小时 " + STime_m + "分钟 " + STime_s + "秒"
     document.getElementById("t_all").innerHTML = t_all;
 }
-setInterval(getSTime, 100);
+setInterval(getSTime, 1000);
+
+function pad(num, n) {
+    var len = num.toString().length;
+    while(len < n) {
+        num = "0" + num;
+        len++;
+    }
+    return num;
+}
 
 </script>
 
